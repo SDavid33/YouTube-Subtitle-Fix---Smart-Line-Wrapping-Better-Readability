@@ -86,21 +86,12 @@ perLineBackground: true,
 
 ## Changelog
 
-### 1.2.9
+### 1.2.10
 
-- Restored the full Tampermonkey settings UI with the `YT Sub Fix` YouTube header button.
-- Rolled back the risky 1.2.7/1.2.8 caption fallback styling that caused oversized black caption boxes.
-- Returned subtitle processing to the previous stable frame-based timing.
-
-### 1.2.8
-
-- Fixed the 1.2.7 fallback styling so internal YouTube caption segments do not receive large background boxes.
-- Forced the processed caption window background/padding to transparent in per-line mode with inline important styles.
-
-### 1.2.7
-
-- Reduced backgroundless caption flashes by applying fallback subtitle background styles immediately.
-- Process subtitle DOM mutations synchronously before the next animation-frame pass.
+- Based on the restored stable `1.2.6` settings-panel version.
+- Reduced the brief unformatted subtitle flash by running subtitle processing immediately on caption DOM changes, then keeping the existing animation-frame pass.
+- Hid YouTube's temporary `English / Click for settings` caption info overlay when subtitles are toggled on.
+- No settings panel layout or background mode behavior changes.
 
 ### 1.2.6
 
