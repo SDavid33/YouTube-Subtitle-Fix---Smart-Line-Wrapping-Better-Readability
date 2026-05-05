@@ -88,10 +88,8 @@ perLineBackground: true,
 
 ### 1.2.10
 
-- Based on the restored stable `1.2.6` settings-panel version.
 - Reduced the brief unformatted subtitle flash by running subtitle processing immediately on caption DOM changes, then keeping the existing animation-frame pass.
 - Hid YouTube's temporary `English / Click for settings` caption info overlay when subtitles are toggled on.
-- No settings panel layout or background mode behavior changes.
 
 ### 1.2.6
 
